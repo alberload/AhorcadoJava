@@ -47,9 +47,7 @@ public class VentanaAhorcado extends javax.swing.JFrame {
             case 5: nombreImagen = getClass().getResource("/imagenes/ahorcado_5.png"); break;
             default: nombreImagen = getClass().getResource("/imagenes/ahorcado_fin.png"); break;
         }
-
-        miImagen = new ImageIcon(new ImageIcon(nombreImagen).getImage().getScaledInstance(ancho, alto, Image.SCALE_DEFAULT));
-        
+        miImagen = new ImageIcon(new ImageIcon(nombreImagen).getImage().getScaledInstance(ancho, alto, Image.SCALE_DEFAULT));  
         foto.setIcon(miImagen);
     }
     
@@ -76,10 +74,6 @@ public class VentanaAhorcado extends javax.swing.JFrame {
             numeroFallos++;
             dibujaImagen(numeroFallos);
         }
-        
-        
-        
-        
     }
     
     /**
